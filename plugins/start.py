@@ -119,19 +119,40 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
     
     
 @Bot.on_message(filters.command('start') & filters.private)
+async@Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(
-                "Join Channel",
-                url = client.invitelink)
-        ]
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟷 🦊", url=client.invitelink),
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟸 🐭", url=client.invitelink2),
+        ],
+        [
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟹 🐰", url=client.invitelink3),
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 4 🐰", url=client.invitelink4),
+        ],
+        [
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 5 🐰", url=client.invitelink5),
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 6 🐰", url=client.invitelink6),
+        ],
+   		[
+			InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 7 🐰", url=client.invitelink7),
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟹 🐰", url=client.invitelink8),
+        ],
+		[
+			InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟹 🐰", url=client.invitelink9),
+			InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟹 🐰", url=client.invitelink10),
+        ],
+        [
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟹 🐰", url=client.invitelink11),
+			InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟹 🐰", url=client.invitelink12),
+        ],
+
     ]
     try:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = 'Rᴇʟᴏᴀᴅ 💁‍♂️',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
