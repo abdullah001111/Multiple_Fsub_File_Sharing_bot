@@ -82,108 +82,10 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL_4 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL_4}")
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Eren_is_Yeager for support")
                 sys.exit()
-        if FORCE_SUB_CHANNEL_5:
-            try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_5)).invite_link
-                if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_5)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_5)).invite_link
-                self.invitelink = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
-                self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL_5 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL_5}")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Eren_is_Yeager for support")
-                sys.exit()
-        if FORCE_SUB_CHANNEL_6:
-            try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_6)).invite_link
-                if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_6)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_6)).invite_link
-                self.invitelink = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
-                self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL_6 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL_6}")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Eren_is_Yeager for support")
-                sys.exit()
-        if FORCE_SUB_CHANNEL_7:
-            try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_7)).invite_link
-                if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_7)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_7)).invite_link
-                self.invitelink = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
-                self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL_7 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL_7}")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Eren_is_Yeager for support")
-                sys.exit()
-        if FORCE_SUB_CHANNEL_8:
-            try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_8)).invite_link
-                if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_8)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_8)).invite_link
-                self.invitelink = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
-                self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL_8 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL_8}")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Eren_is_Yeager for support")
-                sys.exit()
-        if FORCE_SUB_CHANNEL_9:
-            try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_9)).invite_link
-                if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_9)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_9)).invite_link
-                self.invitelink = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
-                self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL_9 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL_9}")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Eren_is_Yeager for support")
-                sys.exit()
-        if FORCE_SUB_CHANNEL_10:
-            try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_10)).invite_link
-                if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_10)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_10)).invite_link
-                self.invitelink = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
-                self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL_10 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL_10}")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Eren_is_Yeager for support")
-                sys.exit()
-        if FORCE_SUB_CHANNEL_11:
-            try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_11)).invite_link
-                if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_11)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_11)).invite_link
-                self.invitelink = link
-            except Exception as a:
+                            except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
                 self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL_11 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL_11}")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Eren_is_Yeager for support")
-                sys.exit()
-        if FORCE_SUB_CHANNEL_12:
-            try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_12)).invite_link
-                if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_12)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_12)).invite_link
-                self.invitelink = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
-                self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL_12 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL_12}")
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Eren_is_Yeager for support")
                 sys.exit()
         try:
