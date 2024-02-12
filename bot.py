@@ -9,7 +9,7 @@ from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
 
-from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL_1, FORCE_SUB_CHANNEL_2, FORCE_SUB_CHANNEL_3, FORCE_SUB_CHANNEL_4, FORCE_SUB_CHANNEL_5, FORCE_SUB_CHANNEL_6, FORCE_SUB_CHANNEL_7, FORCE_SUB_CHANNEL_8, FORCE_SUB_CHANNEL_9, FORCE_SUB_CHANNEL_10, FORCE_SUB_CHANNEL_11, FORCE_SUB_CHANNEL_12, CHANNEL_ID, PORT
+from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL_1, FORCE_SUB_CHANNEL_2, FORCE_SUB_CHANNEL_3, FORCE_SUB_CHANNEL_4, CHANNEL_ID, PORT
 
 class Bot(Client):
     def __init__(self):
@@ -49,7 +49,7 @@ class Bot(Client):
                 if not link:
                     await self.export_chat_invite_link(FORCE_SUB_CHANNEL_2)
                     link = (await self.get_chat(FORCE_SUB_CHANNEL_2)).invite_link
-                self.invitelink = link
+                self.invitelink2 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
@@ -62,7 +62,7 @@ class Bot(Client):
                 if not link:
                     await self.export_chat_invite_link(FORCE_SUB_CHANNEL_3)
                     link = (await self.get_chat(FORCE_SUB_CHANNEL_3)).invite_link
-                self.invitelink = link
+                self.invitelink3 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
@@ -75,7 +75,7 @@ class Bot(Client):
                 if not link:
                     await self.export_chat_invite_link(FORCE_SUB_CHANNEL_4)
                     link = (await self.get_chat(FORCE_SUB_CHANNEL_4)).invite_link
-                self.invitelink = link
+                self.invitelink4 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
