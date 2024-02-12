@@ -53,38 +53,6 @@
       "description": "id of the channel or group, if you want enable force sub feature else put 0",
       "value": "0"
     },
-    "FORCE_SUB_CHANNEL_5":{
-      "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "0"
-    },
-    "FORCE_SUB_CHANNEL_6":{
-      "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "0"
-    },
-    "FORCE_SUB_CHANNEL_7":{
-      "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "0"
-    },
-    "FORCE_SUB_CHANNEL_8":{
-      "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "0"
-    },
-    "FORCE_SUB_CHANNEL_9":{
-      "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "0"
-    },
-    "FORCE_SUB_CHANNEL_10":{
-      "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "0"
-    },
-    "FORCE_SUB_CHANNEL_11":{
-      "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "0"
-    },
-    "FORCE_SUB_CHANNEL_12":{
-      "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "0"
-    },
     "START_MESSAGE": {
       "description": "Optional: start message of bot, use HTML parsemode format",
       "value": "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
