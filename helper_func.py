@@ -6,12 +6,12 @@ import re
 import asyncio
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
-from config import FORCE_SUB_CHANNEL_1, FORCE_SUB_CHANNEL_2, FORCE_SUB_CHANNEL_3, FORCE_SUB_CHANNEL_4, FORCE_SUB_CHANNEL_5, FORCE_SUB_CHANNEL_6, FORCE_SUB_CHANNEL_7, FORCE_SUB_CHANNEL_8, FORCE_SUB_CHANNEL_9, FORCE_SUB_CHANNEL_10, FORCE_SUB_CHANNEL_11, FORCE_SUB_CHANNEL_12, ADMINS
+from config import FORCE_SUB_CHANNEL_1, FORCE_SUB_CHANNEL_2, FORCE_SUB_CHANNEL_3, FORCE_SUB_CHANNEL_4, ADMINS
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram.errors import FloodWait
 
 async def is_subscribed(filter, client, update):
-    if not (FORCE_SUB_CHANNEL_1 or FORCE_SUB_CHANNEL_2 or FORCE_SUB_CHANNEL_3 or FORCE_SUB_CHANNEL_4 or FORCE_SUB_CHANNEL_5 or FORCE_SUB_CHANNEL_6 or FORCE_SUB_CHANNEL_7 or FORCE_SUB_CHANNEL_8 or FORCE_SUB_CHANNEL_9 or FORCE_SUB_CHANNEL_10 or FORCE_SUB_CHANNEL_11 or FORCE_SUB_CHANNEL_12):
+    if not (FORCE_SUB_CHANNEL_1 or FORCE_SUB_CHANNEL_2 or FORCE_SUB_CHANNEL_3 or FORCE_SUB_CHANNEL_4):
         return True
 
     user_id = update.from_user.id
@@ -21,7 +21,7 @@ async def is_subscribed(filter, client, update):
 
     member_status = ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER
 
-    for channel_id in [FORCE_SUB_CHANNEL_1, FORCE_SUB_CHANNEL_2, FORCE_SUB_CHANNEL_3, FORCE_SUB_CHANNEL_4, FORCE_SUB_CHANNEL_5, FORCE_SUB_CHANNEL_6, FORCE_SUB_CHANNEL_7, FORCE_SUB_CHANNEL_8, FORCE_SUB_CHANNEL_9, FORCE_SUB_CHANNEL_10, FORCE_SUB_CHANNEL_11, FORCE_SUB_CHANNEL_12]:
+    for channel_id in [FORCE_SUB_CHANNEL_1, FORCE_SUB_CHANNEL_2, FORCE_SUB_CHANNEL_3, FORCE_SUB_CHANNEL_4]:
         if not channel_id:
             continue
 
