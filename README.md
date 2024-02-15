@@ -111,7 +111,7 @@ stats - checking your bot uptime
 
 
 ## Support   
-Join Our [Telegram Group](https://www.telegram.dog/codexbotzsupport) For Support/Assistance And Our [Channel](https://www.telegram.dog/codexbotz) For Updates.   
+Join Our [Telegram Group](https://www.telegram.dog/Mayhem_Support) For Support/Assistance And Our [Channel](https://www.telegram.dog/Mayhem_Bots) For Updates.   
    
 Report Bugs, Give Feature Requests There..   
 
@@ -119,6 +119,7 @@ Report Bugs, Give Feature Requests There..
 
 - Thanks To Dan For His Awsome [Libary](https://github.com/pyrogram/pyrogram)
 - Our Support Group Members
+- @Eren_is_Yeager For Adding For Fsub
 
 ### Licence
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
