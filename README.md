@@ -2,6 +2,7 @@
 
 <p align="center">
 
+
 Telegram Bot to store Posts and Documents and it can Access by Special Links.
 I Guess This Will Be Usefull For Many People.....😇. 
 
@@ -9,13 +10,11 @@ I Guess This Will Be Usefull For Many People.....😇.
 
 **If you need any more modes in repo or If you find out any bugs, mention in [@mayhem_support ](https://www.telegram.dog/mayhem_support)**
 
-**Make sure to see [contributing.md](https://github.com/CodeXBotz/File-Sharing-Bot/blob/main/CONTRIBUTING.md) for instructions on contributing to the project!**
-
 
 
 ### Features
 - Fully customisable.
-- Customisable welcome & Multiple Forcesub messages.
+- Customisable welcome & Forcesub messages.
 - More than one Posts in One Link.
 - Can be deployed on heroku directly.
 
